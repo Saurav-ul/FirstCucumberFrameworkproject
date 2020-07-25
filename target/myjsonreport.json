@@ -1,0 +1,77 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-07-24T23:57:24.380Z",
+        "line": 4,
+        "name": "Search for vegetables and validate order",
+        "description": "",
+        "id": "greenkart-order-placing;search-for-vegetables-and-validate-order",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 12501000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on Greenkart home page",
+            "match": {
+              "location": "stepdefinitions.greenkartstepdef.user_is_on_greenkart_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3754000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User search for \"cucumber\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "cucumber",
+                  "offset": 17
+                }
+              ],
+              "location": "stepdefinitions.greenkartstepdef.user_search_for_something(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 64000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "\"cucumber\" details are displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "cucumber",
+                  "offset": 1
+                }
+              ],
+              "location": "stepdefinitions.greenkartstepdef.something_details_are_displayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Seltest"
+          }
+        ]
+      }
+    ],
+    "name": "Greenkart order placing",
+    "description": "",
+    "id": "greenkart-order-placing",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/Greenkart.feature",
+    "tags": []
+  }
+]
